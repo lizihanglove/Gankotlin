@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_80dp"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/dimen_10dp"
+              android:paddingRight="@dimen/dimen_10dp"
+              android:paddingTop="@dimen/dimen_10dp">
+
+    <ImageView
+        android:id="@+id/dayDataThumbnail"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:contentDescription="@string/thumbnail"/>
+
+    <TextView
+        android:id="@+id/dayDataName"
+        android:layout_width="0px"
+        android:layout_height="@dimen/dimen_80dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

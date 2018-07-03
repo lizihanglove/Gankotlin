@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="240dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"
+              android:background="@color/color_white"
+              android:orientation="vertical"
+              android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="1"
+        android:background="@drawable/menu_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:text="@string/gank"
+            android:textSize="@dimen/font_24sp"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:src="@drawable/work"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gank_description"
+            android:textSize="@dimen/font_12sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10dp"
+        android:background="@color/color_light_transparent_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="3"
+        android:background="@color/color_light_transparent_gray"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_white"
+            android:layout_height="@dimen/dimen_10dp"/>
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/round_input"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_5dp"
+            >
+
+            <ImageView
+
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:src="@drawable/search"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="搜索"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_white"
+            android:layout_height="@dimen/dimen_10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_latest"
+            style="@style/menuItemStyle"
+            android:background="@drawable/menu_item_background_selector">
+
+            <TextView
+                style="@style/menuItemTextStyle"
+                android:text="@string/latest"/>
+
+            <ImageView
+                style="@style/menuItemImageStyle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_spare_read"
+            style="@style/menuItemStyle"
+            android:background="@drawable/menu_item_background_selector">
+
+            <TextView
+                style="@style/menuItemTextStyle"
+                android:text="@string/spare_read"/>
+
+            <ImageView
+                style="@style/menuItemImageStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_subscribe"
+            style="@style/menuItemStyle"
+            android:background="@drawable/menu_item_background_selector">
+
+            <TextView
+                style="@style/menuItemTextStyle"
+                android:text="@string/subscribe"/>
+
+            <ImageView
+                style="@style/menuItemImageStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_out_source"
+            style="@style/menuItemStyle"
+            android:background="@drawable/menu_item_background_selector">
+
+            <TextView
+                style="@style/menuItemTextStyle"
+                android:text="@string/out_source"/>
+
+            <ImageView
+                style="@style/menuItemImageStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_submit_material"
+            style="@style/menuItemStyle">
+
+            <TextView
+                style="@style/menuItemTextStyle"
+                android:text="@string/submit_material"/>
+
+            <ImageView
+                style="@style/menuItemImageStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rss_subscribe"
+            style="@style/menuItemStyle">
+
+            <TextView
+                style="@style/menuItemTextStyle"
+                android:text="@string/rss_subscribe"/>
+
+            <ImageView
+                style="@style/menuItemImageStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

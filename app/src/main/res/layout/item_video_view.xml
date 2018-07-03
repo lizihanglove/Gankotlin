@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_40dp"
+              android:paddingStart="@dimen/dimen_10dp"
+              android:paddingEnd="@dimen/dimen_10dp"
+              android:paddingTop="@dimen/dimen_10dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dayDataTitle"
+        android:layout_width="match_parent"
+        android:textColor="@color/color_light_blue"
+        android:layout_height="@dimen/dimen_30dp"/>
+
+</LinearLayout>

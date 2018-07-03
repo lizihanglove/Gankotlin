@@ -1,0 +1,46 @@
+<resources>
+
+    <style name="menuItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10dp</item>
+        <item name="android:padding">@dimen/dimen_10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/menu_item_background_selector</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="menuItemTextStyle">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/color_text_color</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:textSize">@dimen/font_18sp</item>
+    </style>
+
+    <style name="menuItemImageStyle">
+        <item name="android:layout_width">@dimen/dimen_20dp</item>
+        <item name="android:layout_height">@dimen/dimen_20dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:src">@drawable/arrow_right</item>
+    </style>
+
+    <style name="itemTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/color_light_blue</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dimen_20dp</item>
+        <item name="android:paddingRight">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_6dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_6dp</item>
+        <item name="android:layout_height">@dimen/dimen_30dp</item>
+        <item name="android:src">@drawable/arrow_right</item>
+    </style>
+
+</resources>
