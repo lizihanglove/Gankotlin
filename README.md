@@ -32,6 +32,8 @@ git clone git@github.com:lizihanglove/NewBee.git
 [Loading](https://github.com/lizihanglove/Loading),
 [Preview](https://github.com/lizihanglove/Preview)
 
+# ToDo
+Add reading module
 
 # License [![GitHub license](https://img.shields.io/github/license/lizihanglove/Loading.svg)](https://github.com/lizihanglove/NewBee/blob/master/LICENSE)
 
