@@ -25,10 +25,9 @@ open class SplashActivity : AppCompatActivity() {
         setFullScreen()
         setContentView(R.layout.activity_splash)
         val day =Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
-        val color = colors[day-1]
+        val color = resources.getColor(colors[day-1])
         container.setBackgroundColor(color)
         textView.text = getString(R.string.nickname)
-
         val timer: CountDownTimer = SplashTimer(this, 3000, 1)
         timer.start()
     }
