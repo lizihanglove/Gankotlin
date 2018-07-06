@@ -11,10 +11,29 @@ A kotlin application based on gank.io
 | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(7).png" width="200" hegiht="500" align=center />|||
 
 # Usage
+### a.http
+```
+git clone https://github.com/lizihanglove/NewBee.git
+```
+
+### b.ssh
+```
+git clone git@github.com:lizihanglove/NewBee.git
+```
 
 # Libaray
+[Retrofit ](https://github.com/square/retrofit),
+[Kotlin](https://github.com/JetBrains/kotlin),
+[Anko ](https://github.com/Kotlin/anko),
+[RxJava](https://github.com/ReactiveX/RxJava),
+[RxAndroid](https://github.com/ReactiveX/RxAndroid),
+[Logger](https://github.com/orhanobut/logger),
+[Glide](https://github.com/bumptech/glide),
+[Loading](https://github.com/lizihanglove/Loading),
+[Preview](https://github.com/lizihanglove/Preview)
 
-# License
+
+# License [![GitHub license](https://img.shields.io/github/license/lizihanglove/Loading.svg)](https://github.com/lizihanglove/NewBee/blob/master/LICENSE)
 
 
 
