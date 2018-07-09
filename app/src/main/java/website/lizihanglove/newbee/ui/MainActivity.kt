@@ -1,6 +1,5 @@
 package website.lizihanglove.newbee.ui
 
-import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -25,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private val mainFragment: Fragment = MainFragment()
     private val spareReadFragment: Fragment = SpareReadFragment()
+    private val historyFragment: Fragment = HistoryFragment()
     private val toolbar: Toolbar
         get() {
             val toolBar: Toolbar = findViewById(R.id.tool_bar)
@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val latest: LinearLayout = findViewById(R.id.ll_latest)
+        val history: LinearLayout = findViewById(R.id.ll_history)
         val spareRead: LinearLayout = findViewById(R.id.ll_spare_read)
         val subscribe: LinearLayout = findViewById(R.id.ll_subscribe)
         val outSource: LinearLayout = findViewById(R.id.ll_out_source)
@@ -59,7 +60,8 @@ class MainActivity : AppCompatActivity() {
         mDrawerToggle.syncState()
         drawer!!.addDrawerListener(mDrawerToggle)
         latest.setOnClickListener { switchUI(0, toolbar) }
-        spareRead.setOnClickListener { switchUI(1, toolbar) }
+        history.setOnClickListener{switchUI(1,toolbar)}
+        spareRead.setOnClickListener { switchUI(2, toolbar) }
         subscribe.setOnClickListener { toast("做不了，订阅没有接口") }
         outSource.setOnClickListener { toast("只是为了好看而已，外包没有做") }
         submitMaterial.setOnClickListener { toast("别多想，提交并没有做") }
@@ -79,6 +81,11 @@ class MainActivity : AppCompatActivity() {
                 toolbar.title = "最新内容"
             }
             1 -> {
+                transaction.replace(R.id.ll_content, historyFragment)
+                transaction.show(historyFragment)
+                toolbar.title = "历史内容"
+            }
+            2 -> {
                 transaction.replace(R.id.ll_content, spareReadFragment)
                 transaction.show(spareReadFragment)
                 toolbar.title = "闲读"
@@ -89,7 +96,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun hideUI(fragmentManager: FragmentManager) {
         fragmentManager.beginTransaction()
+                .hide(mainFragment)
                 .hide(spareReadFragment)
+                .hide(historyFragment)
                 .commit()
     }
 }

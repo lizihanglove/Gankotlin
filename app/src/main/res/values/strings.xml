@@ -24,4 +24,5 @@
     <string name="copy_url">复制链接</string>
     <string name="open_url">打开链接</string>
     <string name="dialog">dialog</string>
+    <string name="history">历史内容</string>
 </resources>

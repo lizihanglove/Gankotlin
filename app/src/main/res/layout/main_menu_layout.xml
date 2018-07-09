@@ -98,6 +98,18 @@
                 style="@style/menuItemImageStyle"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_history"
+            style="@style/menuItemStyle"
+            android:background="@drawable/menu_item_background_selector">
+
+            <TextView
+                style="@style/menuItemTextStyle"
+                android:text="@string/history"/>
+
+            <ImageView
+                style="@style/menuItemImageStyle"/>
+        </LinearLayout>
+        <LinearLayout
             android:id="@+id/ll_spare_read"
             style="@style/menuItemStyle"
             android:background="@drawable/menu_item_background_selector">
