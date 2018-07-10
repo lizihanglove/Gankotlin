@@ -10,7 +10,7 @@ A kotlin application based on gank.io
 | Preview | Preview | Preview |
 | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(7).png" width="200" hegiht="500" align=center /> | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(8).png" width="200" hegiht="500" align=center />| |
 
-# Usage
+# Download
 ### a.http
 ```
 git clone https://github.com/lizihanglove/NewBee.git
@@ -33,8 +33,8 @@ git clone git@github.com:lizihanglove/NewBee.git
 [Preview](https://github.com/lizihanglove/Preview)
 
 # ToDo
-Add History
-Add reading module
+###### Add History
+###### Add reading module
 
 # License [![GitHub license](https://img.shields.io/github/license/lizihanglove/Loading.svg)](https://github.com/lizihanglove/NewBee/blob/master/LICENSE)
 
