@@ -25,11 +25,6 @@ class MainActivity : AppCompatActivity() {
     private val mainFragment: Fragment = MainFragment()
     private val spareReadFragment: Fragment = SpareReadFragment()
     private val historyFragment: Fragment = HistoryFragment()
-    private val toolbar: Toolbar
-        get() {
-            val toolBar: Toolbar = findViewById(R.id.tool_bar)
-            return toolBar
-        }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         toolBar.setTitleTextColor(Color.WHITE)
-        switchUI(0, toolbar)
+        switchUI(0, toolBar)
         setSupportActionBar(toolBar)
         supportActionBar!!.setHomeButtonEnabled(true)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
@@ -59,9 +54,9 @@ class MainActivity : AppCompatActivity() {
         mDrawerToggle = object : ActionBarDrawerToggle(this, drawer, toolBar, R.string.open, R.string.close) {}
         mDrawerToggle.syncState()
         drawer!!.addDrawerListener(mDrawerToggle)
-        latest.setOnClickListener { switchUI(0, toolbar) }
-        history.setOnClickListener{switchUI(1,toolbar)}
-        spareRead.setOnClickListener { switchUI(2, toolbar) }
+        latest.setOnClickListener { switchUI(0, toolBar) }
+        history.setOnClickListener { switchUI(1, toolBar) }
+        spareRead.setOnClickListener { switchUI(2, toolBar) }
         subscribe.setOnClickListener { toast("做不了，订阅没有接口") }
         outSource.setOnClickListener { toast("只是为了好看而已，外包没有做") }
         submitMaterial.setOnClickListener { toast("别多想，提交并没有做") }

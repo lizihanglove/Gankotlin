@@ -48,7 +48,7 @@ class DayDataAdapter(data: List<MultipleItem>) : BaseMultiItemQuickAdapter<Multi
                         .load(bonusUrl)
                         .placeholder(R.drawable.empty)
                         .into(image)
-                image.setOnClickListener({
+                image.setOnClickListener {
                     run {
                         val color = mContext.resources.getColor(R.color.color_light_gray)
                         val view = mContext.layoutInflater.inflate(R.layout.preview_layout, null)
@@ -63,7 +63,7 @@ class DayDataAdapter(data: List<MultipleItem>) : BaseMultiItemQuickAdapter<Multi
                                 .build()
                                 .show()
                     }
-                })
+                }
 
             }
             MultipleItem.IMAGE_TEXT -> {
@@ -78,7 +78,7 @@ class DayDataAdapter(data: List<MultipleItem>) : BaseMultiItemQuickAdapter<Multi
                             .load(imagesUrl)
                             .placeholder(R.drawable.empty)
                             .into(thumbnail)
-                    thumbnail.setOnClickListener({
+                    thumbnail.setOnClickListener {
                         run {
                             val color = mContext.resources.getColor(R.color.color_light_gray)
                             val view = mContext.layoutInflater.inflate(R.layout.preview_layout, null)
@@ -93,22 +93,22 @@ class DayDataAdapter(data: List<MultipleItem>) : BaseMultiItemQuickAdapter<Multi
                                     .build()
                                     .show()
                         }
-                    })
+                    }
                 } else {
                     val localUrl = mContext.getDrawable(R.drawable.empty)
                     GlideApp.with(mContext)
                             .load(localUrl)
                             .placeholder(R.drawable.empty)
                             .into(thumbnail)
-                    thumbnail.setOnClickListener({
+                    thumbnail.setOnClickListener {
                         run {
                             mContext.toast("无图片预览")
                         }
-                    })
+                    }
                 }
                 val container = helper.getView<TextView>(R.id.dayDataName)
                 val projectUrl = item.objectContent?.get("url")
-                container.setOnClickListener({
+                container.setOnClickListener {
                     run {
                         val intent = Intent(mContext, WebViewActivity::class.java)
                         val extra = Bundle()
@@ -116,14 +116,14 @@ class DayDataAdapter(data: List<MultipleItem>) : BaseMultiItemQuickAdapter<Multi
                         intent.putExtra("bundle", extra)
                         mContext.startActivity(intent)
                     }
-                })
+                }
             }
             MultipleItem.VIDEO -> {
                 val desc = item.objectContent?.get("desc")
                 val videoUrl = item.objectContent?.get("url")
                 helper.setText(R.id.dayDataTitle, desc?.asString)
                 val view = helper.getView<TextView>(R.id.dayDataTitle)
-                view.setOnClickListener({
+                view.setOnClickListener {
                     run {
                         val intent = Intent(mContext, WebViewActivity::class.java)
                         val extra = Bundle()
@@ -131,7 +131,7 @@ class DayDataAdapter(data: List<MultipleItem>) : BaseMultiItemQuickAdapter<Multi
                         intent.putExtra("bundle", extra)
                         mContext.startActivity(intent)
                     }
-                })
+                }
             }
             else -> {
                 helper.setText(R.id.dayDataEmpty, "没有内容")

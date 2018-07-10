@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historyItem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_70dp"
+    android:layout_marginTop="@dimen/dimen_2dp"
+    android:layout_marginBottom="@dimen/dimen_2dp"
+    android:layout_marginLeft="@dimen/dimen_5dp"
+    android:layout_marginRight="@dimen/dimen_5dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/dateLogo"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:textColor="@color/color_text_color"
+        android:textSize="@dimen/font_24sp" />
+
+    <TextView
+        android:id="@+id/dateDetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:textColor="@color/color_text_color"
+        android:gravity="center"
+        android:background="@drawable/history_background"
+        android:textSize="@dimen/font_16sp" />
+
+</LinearLayout>
