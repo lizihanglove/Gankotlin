@@ -60,9 +60,8 @@ open class MainFragment : Fragment() {
                         .history(yearString, monthString, dayString)
                         .compose(RxUtil.applyIoSchedulers())
                         .subscribe(
-                                this::checkData,
-                                { throwable -> showError(throwable) }
-                        )
+                                this::checkData
+                        ) { throwable -> showError(throwable) }
             } else {
                 showError()
             }

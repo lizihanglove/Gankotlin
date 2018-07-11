@@ -12,7 +12,7 @@
     <color name="color_light_gray">#93A6B1</color>
     <color name="color_light_transparent_gray">#DCDCDC</color>
     <color name="color_light_red">#FF4081</color>
-    <color name="color_text_color">#DCDCDC</color>
+    <color name="color_text_color">#EEEEEE</color>
 
     <color name="color_monday">#f85959</color>
     <color name="color_tuesday">#ff9f68</color>

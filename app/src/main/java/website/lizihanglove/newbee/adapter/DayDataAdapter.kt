@@ -46,6 +46,7 @@ class DayDataAdapter(data: List<MultipleItem>) : BaseMultiItemQuickAdapter<Multi
                 val bonusUrl = item.objectContent?.get("url")?.asString
                 GlideApp.with(mContext)
                         .load(bonusUrl)
+                        .thumbnail(0.5f)
                         .placeholder(R.drawable.empty)
                         .into(image)
                 image.setOnClickListener {
