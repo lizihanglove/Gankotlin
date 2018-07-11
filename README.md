@@ -32,6 +32,9 @@ git clone git@github.com:lizihanglove/NewBee.git
 [Loading](https://github.com/lizihanglove/Loading),
 [Preview](https://github.com/lizihanglove/Preview)
 
+# Acknowledgement
+[Gank.io](http://gank.io/)
+
 # ToDo
 ###### Add history module
 ###### Add reading module
