@@ -36,7 +36,7 @@ git clone git@github.com:lizihanglove/NewBee.git
 [Gank.io](http://gank.io/)
 
 # ToDo
-###### Add history module
+###### Add history module @done
 ###### Add reading module
 
 # License [![GitHub license](https://img.shields.io/github/license/lizihanglove/Loading.svg)](https://github.com/lizihanglove/NewBee/blob/master/LICENSE)
