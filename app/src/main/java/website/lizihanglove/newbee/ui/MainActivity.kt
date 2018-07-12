@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.main_menu_layout.*
+import kotlinx.android.synthetic.main.toolbar_layout.*
 import org.jetbrains.anko.toast
 import website.lizihanglove.newbee.R
 
@@ -29,17 +31,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val latest: LinearLayout = findViewById(R.id.ll_latest)
-        val history: LinearLayout = findViewById(R.id.ll_history)
-        val spareRead: LinearLayout = findViewById(R.id.ll_spare_read)
-        val subscribe: LinearLayout = findViewById(R.id.ll_subscribe)
-        val outSource: LinearLayout = findViewById(R.id.ll_out_source)
-        val submitMaterial: LinearLayout = findViewById(R.id.ll_submit_material)
-        val rssSubscribe: LinearLayout = findViewById(R.id.ll_rss_subscribe)
-        val toolBar: Toolbar = findViewById(R.id.tool_bar)
-        val search: LinearLayout = findViewById(R.id.ll_search)
-
         search.setOnClickListener {
             run {
                 toast("搜索并没有好")
@@ -61,8 +52,8 @@ class MainActivity : AppCompatActivity() {
         outSource.setOnClickListener { toast("只是为了好看而已，外包没有做") }
         submitMaterial.setOnClickListener { toast("别多想，提交并没有做") }
         rssSubscribe.setOnClickListener { toast("提交干活都没有做，订阅就更没有做了") }
-
     }
+
 
     private fun switchUI(int: Int, toolbar: Toolbar) {
         drawer!!.closeDrawer(GravityCompat.START)
@@ -71,17 +62,17 @@ class MainActivity : AppCompatActivity() {
         hideUI(fm)
         when (int) {
             0 -> {
-                transaction.replace(R.id.ll_content, mainFragment)
+                transaction.replace(R.id.content, mainFragment)
                 transaction.show(mainFragment)
                 toolbar.title = "最新内容"
             }
             1 -> {
-                transaction.replace(R.id.ll_content, historyFragment)
+                transaction.replace(R.id.content, historyFragment)
                 transaction.show(historyFragment)
                 toolbar.title = "历史内容"
             }
             2 -> {
-                transaction.replace(R.id.ll_content, spareReadFragment)
+                transaction.replace(R.id.content, spareReadFragment)
                 transaction.show(spareReadFragment)
                 toolbar.title = "闲读"
             }

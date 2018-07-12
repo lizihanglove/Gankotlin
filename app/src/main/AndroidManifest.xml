@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".ui.NewBeeApplication"
+        android:name=".app.NewBeeApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/square"
@@ -25,12 +25,15 @@
         <activity
             android:name=".ui.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden"/>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ui.WebViewActivity"
-            android:theme="@style/Theme.AppCompat.Light"/>
+            android:theme="@style/Theme.AppCompat.Light" />
         <activity
             android:name=".ui.HistoryActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ui.SpareReadActivity"
             android:theme="@style/Theme.AppCompat.Light" />
     </application>
 

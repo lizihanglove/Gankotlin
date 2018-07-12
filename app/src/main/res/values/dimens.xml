@@ -31,7 +31,7 @@
     <dimen name="dimen_230dp">230dp</dimen>
     <dimen name="dimen_240dp">240dp</dimen>
     <dimen name="dimen_180dp">180dp</dimen>
-
+    <dimen name="font_30sp">30sp</dimen>
 
 
 </resources>

@@ -4,7 +4,9 @@ import com.google.gson.JsonObject
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Path
+import website.lizihanglove.newbee.model.CategoryResponse
 import website.lizihanglove.newbee.model.LatestResponse
+import website.lizihanglove.newbee.model.SubCategoryResponse
 
 
 /**
@@ -23,4 +25,10 @@ interface Api {
             @Path("month") month: String,
             @Path("day") day: String
     ): Observable<JsonObject>
+
+    @GET("xiandu/categories")
+    fun categories(): Observable<CategoryResponse>
+
+    @GET("xiandu/category/{englishName}")
+    fun subCategories(@Path("englishName") englishName: String): Observable<SubCategoryResponse>
 }

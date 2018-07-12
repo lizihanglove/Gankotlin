@@ -56,10 +56,9 @@ class WebViewActivity : AppCompatActivity() {
         webView.webViewClient = object : WebViewClient() {
 
             override fun onReceivedError(view: WebView?, request: WebResourceRequest?, error: WebResourceError?) {
-                toast("加载失败")
                 super.onReceivedError(view, request, error)
+                Logger.e(error.toString())
             }
-
 
         }
         webView.webChromeClient = object : WebChromeClient() {

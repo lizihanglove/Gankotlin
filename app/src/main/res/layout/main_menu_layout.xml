@@ -55,7 +55,7 @@
             android:background="@color/color_white"
             android:layout_height="@dimen/dimen_10dp"/>
         <LinearLayout
-            android:id="@+id/ll_search"
+            android:id="@+id/search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimen_10dp"
@@ -86,7 +86,7 @@
             android:layout_height="@dimen/dimen_10dp"/>
 
         <LinearLayout
-            android:id="@+id/ll_latest"
+            android:id="@+id/latest"
             style="@style/menuItemStyle"
             android:background="@drawable/menu_item_background_selector">
 
@@ -98,7 +98,7 @@
                 style="@style/menuItemImageStyle"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/ll_history"
+            android:id="@+id/history"
             style="@style/menuItemStyle"
             android:background="@drawable/menu_item_background_selector">
 
@@ -110,7 +110,7 @@
                 style="@style/menuItemImageStyle"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/ll_spare_read"
+            android:id="@+id/spareRead"
             style="@style/menuItemStyle"
             android:background="@drawable/menu_item_background_selector">
 
@@ -123,7 +123,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ll_subscribe"
+            android:id="@+id/subscribe"
             style="@style/menuItemStyle"
             android:background="@drawable/menu_item_background_selector">
 
@@ -136,7 +136,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ll_out_source"
+            android:id="@+id/outSource"
             style="@style/menuItemStyle"
             android:background="@drawable/menu_item_background_selector">
 
@@ -149,7 +149,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ll_submit_material"
+            android:id="@+id/submitMaterial"
             style="@style/menuItemStyle">
 
             <TextView
@@ -161,7 +161,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ll_rss_subscribe"
+            android:id="@+id/rssSubscribe"
             style="@style/menuItemStyle">
 
             <TextView

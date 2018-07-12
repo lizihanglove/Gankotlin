@@ -1,4 +1,4 @@
-package website.lizihanglove.newbee.ui
+package website.lizihanglove.newbee.app
 
 import android.app.Application
 import com.orhanobut.logger.AndroidLogAdapter
