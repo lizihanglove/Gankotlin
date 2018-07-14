@@ -1,7 +1,7 @@
-# 新蜂
+## 新蜂
 基于gank.io网站API 用kotlin语言编写的Android应用
 
-# 预览图
+## 预览图
 | 预览 | 预览 | 预览 | 
 | -------------   | ------------- | ------------- |
 | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(1).png" width="200" hegiht="500" align=center /> | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(2).png" width="200" hegiht="500" align=center /> | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(3).png" width="200" hegiht="500" align=center />
@@ -10,7 +10,7 @@
 | 预览 | 预览 | 预览 |
 | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(7).png" width="200" hegiht="500" align=center /> | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(8).png" width="200" hegiht="500" align=center /> | <img src="https://github.com/lizihanglove/NewBee/blob/master/art/NewBee%20(9).png" width="200" hegiht="500" align=center /> 
 
-# 下载
+## 下载
 ### a.http
 ```
 git clone https://github.com/lizihanglove/NewBee.git
@@ -21,7 +21,7 @@ git clone https://github.com/lizihanglove/NewBee.git
 git clone git@github.com:lizihanglove/NewBee.git
 ```
 
-# 用到的开源库
+## 用到的开源库
 [Retrofit ](https://github.com/square/retrofit),
 [Kotlin](https://github.com/JetBrains/kotlin),
 [Anko ](https://github.com/Kotlin/anko),
@@ -32,14 +32,14 @@ git clone git@github.com:lizihanglove/NewBee.git
 [Loading](https://github.com/lizihanglove/Loading),
 [预览](https://github.com/lizihanglove/预览)
 
-# 感谢gank.io提供的API
+## 感谢gank.io提供的API
 [Gank.io](http://gank.io/)
 
-# 待开发功能
+## 待开发功能
 ###### 添加历史记录模块 @已完成
 ###### 添加闲读模块
 
-# 协议 Apache2.0 [![GitHub license](https://img.shields.io/github/license/lizihanglove/Loading.svg)](https://github.com/lizihanglove/NewBee/blob/master/LICENSE)
+## 协议 Apache2.0 [![GitHub license](https://img.shields.io/github/license/lizihanglove/Loading.svg)](https://github.com/lizihanglove/NewBee/blob/master/LICENSE)
 
 
 
