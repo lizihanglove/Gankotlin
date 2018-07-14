@@ -1,6 +1,6 @@
 ## 新蜂
 基于gank.io网站API 用kotlin语言编写的Android应用
-
+[For English](https://github.com/lizihanglove/NewBee/blob/master/README.md)
 ## 预览图
 | 预览 | 预览 | 预览 | 
 | -------------   | ------------- | ------------- |
@@ -33,7 +33,7 @@ git clone git@github.com:lizihanglove/NewBee.git
 [Preview](https://github.com/lizihanglove/Preview)
 
 ## 感谢gank.io提供的API
-[Gank.io](http://gank.io/)
+[gank.io](http://gank.io/)
 
 ## 待开发功能
 ###### 添加历史记录模块 @已完成
