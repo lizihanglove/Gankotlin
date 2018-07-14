@@ -30,7 +30,7 @@ git clone git@github.com:lizihanglove/NewBee.git
 [Logger](https://github.com/orhanobut/logger),
 [Glide](https://github.com/bumptech/glide),
 [Loading](https://github.com/lizihanglove/Loading),
-[预览](https://github.com/lizihanglove/预览)
+[Preview](https://github.com/lizihanglove/Preview)
 
 ## 感谢gank.io提供的API
 [Gank.io](http://gank.io/)
