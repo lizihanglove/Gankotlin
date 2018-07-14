@@ -34,7 +34,7 @@ git clone git@github.com:lizihanglove/NewBee.git
 [Preview](https://github.com/lizihanglove/Preview)
 
 # Acknowledgement
-[Gank.io](http://gank.io/)
+[gank.io](http://gank.io/)
 
 # ToDo
 ###### Add history module @done
