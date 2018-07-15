@@ -21,6 +21,7 @@ git clone https://github.com/lizihanglove/NewBee.git
 git clone git@github.com:lizihanglove/NewBee.git
 ```
 
+
 ## 用到的开源库
 [Retrofit ](https://github.com/square/retrofit),
 [Kotlin](https://github.com/JetBrains/kotlin),
@@ -41,6 +42,8 @@ git clone git@github.com:lizihanglove/NewBee.git
 
 ## 协议 Apache2.0 [![GitHub license](https://img.shields.io/github/license/lizihanglove/Loading.svg)](https://github.com/lizihanglove/NewBee/blob/master/LICENSE)
 
+## 项目地址
+[新蜂](https://github.com/lizihanglove/NewBee)
 
 
 
