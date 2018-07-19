@@ -1,18 +1,22 @@
 package website.lizihanglove.newbee.ui
 
 import android.os.Bundle
+import android.support.design.widget.TabItem
+import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
 import com.google.gson.JsonObject
 import com.orhanobut.logger.Logger
 import kotlinx.android.synthetic.main.activity_history.*
+import kotlinx.android.synthetic.main.activity_spare_read.*
 import kotlinx.android.synthetic.main.main_fragment_layout.*
 import org.jetbrains.anko.support.v4.toast
 import org.jetbrains.anko.toast
 import site.lizihanglove.loading.Loading
 import website.lizihanglove.newbee.R
 import website.lizihanglove.newbee.adapter.DayDataAdapter
+import website.lizihanglove.newbee.adapter.ReadAdapter
 import website.lizihanglove.newbee.model.MultipleItem
 import website.lizihanglove.newbee.model.SubCategoryResponse
 import website.lizihanglove.newbee.util.*
@@ -20,6 +24,7 @@ import website.lizihanglove.newbee.util.*
 
 open class SpareReadActivity : AppCompatActivity() {
     private lateinit var loading: Loading
+    private lateinit var fragments: ArrayList<Fragment>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_spare_read)
@@ -72,6 +77,16 @@ open class SpareReadActivity : AppCompatActivity() {
      */
     private fun showData(response: SubCategoryResponse) {
         loading.dismiss()
+        response.results.forEach { subCategory ->
+            val newTab = tab.newTab()
+            newTab.text = subCategory.title
+            tab.addTab(newTab)
+            fragments.add(Fragment())
+        }
+        tab.setupWithViewPager(pager)
+        val titles = response.results.map { subCategory -> subCategory.title }
+        val fm = supportFragmentManager
+        pager.adapter = ReadAdapter(titles, fragments, fm)
     }
 
     /**
