@@ -13,7 +13,6 @@ import org.jetbrains.anko.support.v4.toast
 import site.lizihanglove.loading.Loading
 import website.lizihanglove.newbee.R
 import website.lizihanglove.newbee.adapter.DayDataAdapter
-import website.lizihanglove.newbee.model.LatestResponse
 import website.lizihanglove.newbee.model.MultipleItem
 import website.lizihanglove.newbee.util.NetManager
 import website.lizihanglove.newbee.util.RxUtil
@@ -29,45 +28,13 @@ open class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         loading = Loading.Builder(activity).setCancelable(true).build()
         loading.show()
-        //请求更新过数据的日期
+        //获取最新数据
         NetManager.getServer()
-                .latest()
+                .today()
                 .compose(RxUtil.applyIoSchedulers())
-                .subscribe(
-                        { response -> processLatest(response) },
-                        { throwable -> showError(throwable) })
-
+                .subscribe( this::checkData
+                ) { throwable -> showError(throwable) }
     }
-
-    /**
-     * 处理日期
-     */
-    private fun processLatest(response: LatestResponse) {
-        if (response.error) {
-            showError()
-        } else {
-            if (response.results.isNotEmpty()) {
-                val latestDate = response.results[0].split("-")
-                val yearString = latestDate[0]
-                val monthString = latestDate[1]
-                val dayString = latestDate[2]
-
-                //打印数据
-                Logger.i(latestDate.toString())
-
-                //请求最新一天数据
-                NetManager.getServer()
-                        .history(yearString, monthString, dayString)
-                        .compose(RxUtil.applyIoSchedulers())
-                        .subscribe(
-                                this::checkData
-                        ) { throwable -> showError(throwable) }
-            } else {
-                showError()
-            }
-        }
-    }
-
     /**
      * 检查最新数据
      */

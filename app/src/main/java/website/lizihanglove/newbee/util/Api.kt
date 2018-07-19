@@ -16,9 +16,21 @@ import website.lizihanglove.newbee.model.SubCategoryResponse
  */
 interface Api {
 
+    /**
+     * 最新内容
+     */
+    @GET("today")
+    fun today(): Observable<JsonObject>
+
+    /**
+     * 历史数据
+     */
     @GET("day/history")
     fun latest(): Observable<LatestResponse>
 
+    /**
+     * 某日内容
+     */
     @GET("day/{year}/{month}/{day}")
     fun history(
             @Path("year") year: String,
@@ -26,9 +38,15 @@ interface Api {
             @Path("day") day: String
     ): Observable<JsonObject>
 
+    /**
+     * 主分类
+     */
     @GET("xiandu/categories")
     fun categories(): Observable<CategoryResponse>
 
+    /**
+     * 子分类
+     */
     @GET("xiandu/category/{englishName}")
     fun subCategories(@Path("englishName") englishName: String): Observable<SubCategoryResponse>
 }
