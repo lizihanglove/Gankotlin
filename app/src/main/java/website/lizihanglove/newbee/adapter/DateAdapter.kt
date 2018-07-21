@@ -19,7 +19,7 @@ import website.lizihanglove.newbee.util.DATE
 open class DateAdapter(var dates: List<String>, var context: Context) : RecyclerView.Adapter<DateHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DateHolder {
         val historyView = R.layout.item_history_view
-        val view = LayoutInflater.from(parent.context).inflate(historyView, parent, false)
+        val view = LayoutInflater.from(context).inflate(historyView, parent, false)
         return DateHolder(view)
     }
 

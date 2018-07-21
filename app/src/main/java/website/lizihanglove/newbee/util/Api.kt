@@ -6,6 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import website.lizihanglove.newbee.model.CategoryResponse
 import website.lizihanglove.newbee.model.LatestResponse
+import website.lizihanglove.newbee.model.ReadResponse
 import website.lizihanglove.newbee.model.SubCategoryResponse
 
 
@@ -48,5 +49,14 @@ interface Api {
      * 子分类
      */
     @GET("xiandu/category/{englishName}")
-    fun subCategories(@Path("englishName") englishName: String): Observable<SubCategoryResponse>
+    fun subCategories(
+            @Path("englishName") englishName: String
+    ): Observable<SubCategoryResponse>
+
+    @GET("xiandu/data/id/{id}/count/{count}/page/{page}")
+    fun readSummary(
+            @Path("id") id: String,
+            @Path("count") count: Int,
+            @Path("page") page: Int
+    ): Observable<ReadResponse>
 }
