@@ -1,4 +1,4 @@
-# NewBee
+# Gankotlin
 A kotlin application based on gank.io
 [中文版介绍](https://github.com/lizihanglove/NewBee/blob/master/README-CN.md)
 
