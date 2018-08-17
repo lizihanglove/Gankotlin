@@ -38,7 +38,7 @@ git clone git@github.com:lizihanglove/NewBee.git
 
 # ToDo
 ###### Add history module @done
-###### Add reading module
+###### Add reading module @done
 
 # License [![GitHub license](https://img.shields.io/github/license/lizihanglove/Loading.svg)](https://github.com/lizihanglove/NewBee/blob/master/LICENSE)
 
