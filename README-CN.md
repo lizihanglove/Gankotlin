@@ -13,12 +13,12 @@
 ## 下载
 ### a.http
 ```
-git clone https://github.com/lizihanglove/NewBee.git
+git clone https://github.com/lizihanglove/Gankotlin.git
 ```
 
 ### b.ssh
 ```
-git clone git@github.com:lizihanglove/NewBee.git
+git clone git@github.com:lizihanglove/Gankotlin.git
 ```
 
 
